@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="toggle-select">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>FocusTimer-2.0</title>
+    <script type="module" src="./scr/focus-timer/index.js" defer></script>
+    <script type="module" src="./scr//senario-music/main.js" defer></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="app">
+        <main>
+            <section class="sec-timer">
+                <div class="timer">
+                    <span id="minutes">00</span>
+                    <span>:</span>
+                    <span id="seconds">00</span>
+                </div>
+                <div id="controls">
+                    <button class="ph-bold ph-play-circle" data-action="play">
+
+                        <span class="sr-only">Iniciar contador</span>
+                    </button>
+
+                    <button class="ph-bold ph-stop-circle" data-action="stop">
+
+                        <span class="sr-only">Para contador</span>
+                    </button>
+
+                    <button class="ph-bold ph-plus-circle" data-action="plus">
+
+                        <span class="sr-only">Aumentar 5 minutos o tempo do contador</span>
+                    </button>
+
+                    <button class="ph-bold ph-minus-circle" data-action="minus">
+                        
+                        <span class="sr-only">Diminuir 5 minutos o tempo do contador</span>
+                    </button>
+                </div>
+            </section>
+            <section class="senario-music">
+
+                    <button class="ph ph-tree btn-senario" data-atribute="forest">
+                        <span class="sr-only">Ativar musica de fundo floresta</span>
+                    </button>
+
+                    <button class="ph ph-cloud-snow btn-senario" data-atribute="cloudSnow"> 
+                        <span class="sr-only">Ativar musica de fundo chuva</span>
+                    </button>
+
+                    <button class="ph ph-storefront btn-senario" data-atribute="storeFront">
+                        <span class="sr-only">Ativar musica de fundo cafeteria</span>
+                    </button>
+
+                    <button class="ph ph-campfire btn-senario" data-atribute="campfire">
+                        <span class="sr-only">Ativar musica de fundo laleira</span>
+                    </button>
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>

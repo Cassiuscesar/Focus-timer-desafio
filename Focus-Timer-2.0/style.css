@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    -webkit-font-smoothings:antialiased;
+    -moz-font-smoothings:grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+
+    --color-bg:hsla(0, 0%, 100%, 1);
+    --color-bg-select:hsla(194, 97%, 31%, 1);
+    --color-bg-no-select:hsla(240, 9%, 89%, 1);
+    --color-font:hsla(240, 6%, 21%, 1);
+    --color-font-select:#FFF;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family:'Roboto', sans-serif;;
+}
+
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position:absolute;
+    overflow: hidden;
+    
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
+
+#app{
+    height: 100vh;
+    background-color: var(--color-bg);
+    display: grid;
+    
+}
+
+button{
+    border: none;
+    background: none;
+}
+#app main{
+    margin-top: -10rem;
+    display: flex;
+    gap: 19.2rem;
+    place-self: center;
+    align-items: center;
+}
+
+.sec-timer{
+    text-align: center;
+}
+
+.sec-timer span{
+    color: var(--color-font);
+    font-size: 12.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sec-timer button{
+    font-size: 4.8rem;
+    color:var(--color-font);
+}
+
+#controls{
+    display: flex;
+    gap: 4rem;
+}
+
+.senario-music{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3.2rem;
+}
+
+.senario-music button{ 
+    width: 13.2rem;
+    height: 15.2rem;
+    border-radius: 2.6rem;
+    
+    background-color: var(--color-bg-no-select);
+    color: var(--color-font);
+
+    font-size: 5.6rem;
+    cursor: pointer;
+}
+
+#toggle-select{
+    background-color: var(--color-bg-select);
+    color: var(--color-font-select);
+}
+
